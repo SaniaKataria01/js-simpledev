@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Guess the side </p>
+    <button onclick="myFunc()">Click</button>
+    
+
+    <script>
+        function myFunc() {
+            const randomNumber=Math.random();
+            let computerMove='';
+            let result='';
+
+            if(randomNumber>=0 && randomNumber<0.5){
+                computerMove='Heads';
+            }
+            else{
+                computerMove='Tails';
+            }
+
+            let guess=prompt("Heads or Tails");
+
+            if(guess=== computerMove){
+                alert('You win');
+            }
+            else{
+                alert('You Lose');
+            }
+
+        }
+    </script>
+</body>
+
+</html>
